@@ -46,6 +46,10 @@ class KalmanFilter {
    */
   void UpdateEKF(const Eigen::VectorXd &z);
 
+  void CommonUpdate(const Eigen::VectorXd &y);
+
+  double norm_pi(double num);
+
   // state vector
   Eigen::VectorXd x_;
 
